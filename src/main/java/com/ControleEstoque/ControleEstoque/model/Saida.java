@@ -21,11 +21,11 @@ public class Saida {
     private LocalDate dataSaida;
 
     @ManyToOne
-    @JoinColumn(name = "id_Produto", referencedColumnName = "idProduto")
+    @JoinColumn(name = "idProduto", referencedColumnName = "idProduto", foreignKey = @ForeignKey(name = "FK_Produto_Saida"))
     private Produto produto; // referência à entidade
 
     @ManyToOne
-    @JoinColumn(name = "id_Usuario", referencedColumnName = "idUsuario")
+    @JoinColumn(name = "idUsuario", referencedColumnName = "idUsuario", foreignKey = @ForeignKey(name = "FK_Usuario_Saida"))
     private Usuario usuario; // referência à entidade
 
     @Column(nullable = false)

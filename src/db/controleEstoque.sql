@@ -1,27 +1,26 @@
-create database ControleEstoque;
+CREATE DATABASE ControleEstoque;
+USE ControleEstoque;
 
-use ControleEstoque;
-
-create table usuario(
-idUsuario int primary key auto_increment,
-nome varchar(250),
-endereco varchar(150),
-setor varchar(150)
+CREATE TABLE usuario (
+    idUsuario BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(250) NOT NULL,
+    endereco VARCHAR(150) NOT NULL,
+    setor VARCHAR(150) NOT NULL
 );
 
-create table produtos(
-idProduto int primary key auto_increment,
-nome varchar(250),
-quantidade int,
-stats varchar(80)
+CREATE TABLE produtos (
+    idProduto BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(250) NOT NULL,
+    quantidade INT NOT NULL,
+    stats VARCHAR(80)
 );
 
-create table saida(
-idSaida int primary key auto_increment,
-dataSaida date,
-id_Usuario int,
-id_Produto int,
-quantidade_saida int,
-foreign key (id_Usuario) references usuario (idUsuario),
-foreign key (id_Produto) references produtos (idProduto)
+CREATE TABLE saida (
+    idSaida BIGINT PRIMARY KEY AUTO_INCREMENT,
+    dataSaida DATE NOT NULL,
+    id_Usuario BIGINT,
+    id_Produto BIGINT,
+    quantidade_saida INT NOT NULL,
+    FOREIGN KEY (id_Usuario) REFERENCES usuario(idUsuario),
+    FOREIGN KEY (id_Produto) REFERENCES produtos(idProduto)
 );
