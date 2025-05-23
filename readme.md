@@ -21,3 +21,18 @@ API RESTful desenvolvida em Java com Spring Boot para gerenciamento de **produto
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Thallys-San/API_ControleEstoque.git
+2. Acesse o diretório do projeto:
+   ```bash
+   cd API_ControleEstoque
+3.Configure o arquivo src/main/resources/application.properties com suas credenciais de banco de dados. Exemplo:
+   ```bash
+spring.datasource.url=jdbc:mysql://localhost:3306/ControleEstoque
+spring.datasource.username=seu usuario
+spring.datasource.password=sua senha
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
