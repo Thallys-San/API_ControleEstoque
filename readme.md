@@ -42,7 +42,7 @@ API RESTful desenvolvida em Java com Spring Boot para gerenciamento de **produto
    ```bash
    ./mvnw spring-boot:run
    
-5. em seguida execute no MySql o arquivo src/db/controleEstoque.sql ou se quiser manualmente
+5. em seguida execute no MySql o arquivo src/db/controleEstoque.sql ou se quiser manualmente:
    ```bash
    CREATE DATABASE ControleEstoque;
    USE ControleEstoque;
