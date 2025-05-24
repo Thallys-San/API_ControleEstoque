@@ -8,7 +8,7 @@ API RESTful desenvolvida em Java com Spring Boot para gerenciamento de **produto
 - Spring Boot  
 - Spring Data JPA  
 - Maven  
-- [Insira aqui o banco de dados usado, ex: MySQL, PostgreSQL]
+- MySQL
 
 ## 📂 Funcionalidades
 
