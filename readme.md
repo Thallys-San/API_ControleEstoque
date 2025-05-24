@@ -71,5 +71,7 @@ API RESTful desenvolvida em Java com Spring Boot para gerenciamento de **produto
     FOREIGN KEY (id_Produto) REFERENCES produtos(idProduto)
    );
 
+- A aplicação estará disponível em: http://localhost:8080
+
 
 
